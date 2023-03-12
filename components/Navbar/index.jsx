@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 import "./Navbar.scss";
 
-const tabs = ["home", "about", "experience", "projects", "skills", "contact"];
+const tabs = ["home", "about", "experience", "projects", "contact"];
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);

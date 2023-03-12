@@ -21,7 +21,6 @@ function Home() {
       <section id="projects">
         <Projects/>
       </section>
-      <section id="skills">{/* TODO:Skills */}</section>
       <section id="contact">{/* TODO:Contact */}</section>
     </>
   );
