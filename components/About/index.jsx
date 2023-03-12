@@ -44,11 +44,11 @@ function About() {
         <div className="cards">
           {cards.map((card, index) => (
             <motion.div
-            initial={{
+              initial={{
                 opacity: 0,
                 y: 100,
-            }}  
-            whileInView={{
+              }}
+              whileInView={{
                 opacity: 1,
                 y: 0,
               }}
@@ -57,7 +57,6 @@ function About() {
               }}
               transition={{
                 duration: 0.4,
-                type: "tween",
               }}
               viewport={{
                 once: true,

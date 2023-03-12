@@ -18,6 +18,7 @@
 body{
   background-color: var(--primary-color);
   color:var(--white-color);
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar{
