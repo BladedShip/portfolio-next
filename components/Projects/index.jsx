@@ -94,7 +94,6 @@ const work = [
 ];
 
 function Projects() {
-  const filter = () => {};
   return (
     <>
       <div className="block">
