@@ -4,6 +4,7 @@ import "./globals.css";
 import "./App.scss";
 import Navbar from "@/components/Navbar";
 import Socials from "@/components/Socials";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Socials/>
+        <Footer/>
       </body>
     </html>
   );
