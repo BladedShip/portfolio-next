@@ -108,7 +108,7 @@ function Projects() {
           className="work-portfolio"
         >
           {work.map((item, index) => (
-            <div className="work-item flex">
+            <div className="work-item flex" key={index}>
               <div className="work-img flex">
               <img src={item.image} alt={item.title} />
                 <motion.div
