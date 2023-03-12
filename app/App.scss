@@ -50,3 +50,18 @@
   }
 
 }
+
+.bold-text {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--white-color);
+  text-align: left;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
+}

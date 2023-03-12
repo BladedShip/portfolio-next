@@ -8,7 +8,13 @@ import "./Hero.scss";
 
 function Hero() {
   const [text, count] = useTypewriter({
-    words: ["Web Developer", "UI Designer", "Meme Enthusiast", "VFX Artist", "Gamer"],
+    words: [
+      "Web Developer",
+      "UI Designer",
+      "Meme Enthusiast",
+      "VFX Artist",
+      "Gamer",
+    ],
     loop: true,
     delaySpeed: 2500,
   });
@@ -17,9 +23,13 @@ function Hero() {
     <>
       <div className="block">
         <motion.div
+          initial={{
+            opacity: 0,
+            x: -100,
+          }}
           whileInView={{
-            x: [-100, 0],
-            opacity: [0, 1],
+            x: 0,
+            opacity: 1,
           }}
           transition={{
             duration: 0.4,
@@ -27,7 +37,6 @@ function Hero() {
           viewport={{
             once: true,
           }}
-          
           className="header-info"
         >
           <div className="header-badge">

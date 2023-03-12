@@ -44,9 +44,13 @@ function About() {
         <div className="cards">
           {cards.map((card, index) => (
             <motion.div
-              whileInView={{
-                opacity: [0, 1],
-                y: [100, 0],
+            initial={{
+                opacity: 0,
+                y: 100,
+            }}  
+            whileInView={{
+                opacity: 1,
+                y: 0,
               }}
               whileHover={{
                 scale: 1.1,

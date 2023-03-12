@@ -2,6 +2,8 @@ import React from "react";
 
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
 
 function Home() {
   return (
@@ -10,11 +12,15 @@ function Home() {
         <Hero />
       </section>
       <section id="about">
-        {/* TODO:About */}
         <About/>
       </section>
-      <section id="experience">{/* TODO:Experience */}</section>
-      <section id="projects">{/* TODO:Projects */}</section>
+      <section id="experience">
+        {/* TODO:Experience */}
+        <Experience/>
+        </section>
+      <section id="projects">
+        <Projects/>
+      </section>
       <section id="skills">{/* TODO:Skills */}</section>
       <section id="contact">{/* TODO:Contact */}</section>
     </>
