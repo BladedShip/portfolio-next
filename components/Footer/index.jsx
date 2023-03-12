@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <div className="footer">
-        <p className="p-text">Made with ❤️ by <a href="https://www.adithyan.tech">Adithyan Jayakumar</a></p>
+        <p className="p-text">Made with ❤️ by <a href="https://www.adithyan.tech">Adithyan Jayakumar</a> using Next.js</p>
       </div>
     </>
   );

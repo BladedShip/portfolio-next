@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
+import Contact from "@/components/Contact";
 
 function Home() {
   return (
@@ -12,16 +13,17 @@ function Home() {
         <Hero />
       </section>
       <section id="about">
-        <About/>
+        <About />
       </section>
       <section id="experience">
-        {/* TODO:Experience */}
-        <Experience/>
-        </section>
-      <section id="projects">
-        <Projects/>
+        <Experience />
       </section>
-      <section id="contact">{/* TODO:Contact */}</section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </>
   );
 }

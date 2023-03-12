@@ -19,7 +19,7 @@ const socials = [
   {
     name: "Linkedin",
     url: "https://www.linkedin.com/in/adijay/",
-  },
+  }
 ];
 
 function Socials() {

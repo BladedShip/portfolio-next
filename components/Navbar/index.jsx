@@ -10,6 +10,7 @@ const tabs = ["home", "about", "experience", "projects", "contact"];
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
+
   return (
     <>
       <nav className="navbar">
@@ -43,7 +44,9 @@ function Navbar() {
               <ul>
                 {tabs.map((item) => (
                   <li key={item}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    <a href={`#${item}`} 
+                    onClick={() => setToggle(false)}
+                    >
                       {item}
                     </a>
                   </li>
