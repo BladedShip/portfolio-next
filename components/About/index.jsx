@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { urlFor, client } from "@/client";
 
 import "./About.scss";
 
@@ -10,26 +9,26 @@ const cards = [
   {
     title: "Web Developer",
     description:
-      "Building dumb apps with Next.js, React and React Native with a dash of SvelteKit mixed in",
-    image: "https://images.pexels.com/photos/6044820/pexels-photo-6044820.jpeg",
+      "Building top tier apps with Next.js and React with a dash of SvelteKit mixed in.",
+    image: "/assets/web-min.jpg",
   },
   {
     title: "UI Designer",
     description:
-      "Building dumb apps with Next.js, React and React Native with a dash of SvelteKit mixed in",
-    image: "https://images.pexels.com/photos/6044820/pexels-photo-6044820.jpeg",
+      "Using Figma to bring all that I could imagine to life. Sometimes I wing it with the Adobe Suite.",
+    image: "/assets/ui-min.jpg",
   },
   {
     title: "Content Writer",
     description:
-      "Building dumb apps with Next.js, React and React Native with a dash of SvelteKit mixed in",
-    image: "https://images.pexels.com/photos/6044820/pexels-photo-6044820.jpeg",
+      "A storyteller at heart, I love to write about the things I love and the things I learn.",
+    image: "/assets/writer-min.jpg",
   },
   {
-    title: "Mobile Developer",
+    title: "VFX Artist",
     description:
-      "Building dumb apps with Next.js, React and React Native with a dash of SvelteKit mixed in",
-    image: "https://images.pexels.com/photos/6044820/pexels-photo-6044820.jpeg",
+      "Sometimes the best way to tell stories is through Visual Effects. I love to create worlds and bring them to life.",
+    image: "/assets/vfx-min.png",
   },
 ];
 
