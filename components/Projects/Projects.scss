@@ -99,11 +99,13 @@
         background-color: var(--primary-color);
         top:-25px;
     }
+    p{
+        text-align: center;
+    }
 }
 
 .p-custom{
     margin:0.5rem 1rem 0.5rem 1rem;
-    text-align: center;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
