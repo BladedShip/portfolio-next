@@ -26,7 +26,8 @@ const work = [
   },
   {
     title: "FaithFood",
-    description: "A food delivery platform focusing on home to home food delivery",
+    description:
+      "A food delivery platform focusing on home to home food delivery",
     link: "https://www.figma.com/file/us3Bc9AX78sL5YwZwOj8zX/Designs?node-id=144%3A712&t=IKUFKQ7nSuP11f3f-1",
     code: "https://github.com/BladedShip/S8Project",
     image: "/assets/ff.png",
@@ -34,7 +35,8 @@ const work = [
   },
   {
     title: "WhatsDown",
-    description: "It's WhatsApp, but worse. Built with React Native and Amplify",
+    description:
+      "It's WhatsApp, but worse. Built with React Native and Amplify",
     link: "https://github.com/BladedShip/WhatsDown",
     code: "https://github.com/BladedShip/WhatsDown",
     image: "https://images.pexels.com/photos/6044820/pexels-photo-6044820.jpeg",
@@ -55,35 +57,40 @@ const work = [
     code: "https://github.com/itsmeRK/itsmerk.github.io",
     image: "/assets/rkmusical.png",
     category: ["Website", "All"],
-  },{
+  },
+  {
     title: "Adventure of a Lifetime",
     description: "A game I made in under 12 hours using Unity and C#",
     link: "https://drive.google.com/file/d/1YDuqnbva6sTOo5W4p_4CUGSMpRB251g8/view?usp=sharing",
     code: "https://github.com/BladedShip/The-Adventure-of-a-Lifetime",
     image: "/assets/lifetime.png",
     category: ["Game", "All"],
-  },{
+  },
+  {
     title: "Moorcha",
     description: "A short film dreamt up by me and my friends",
     link: "https://www.youtube.com/watch?v=01vQ105e1xI",
     code: "https://www.youtube.com/watch?v=01vQ105e1xI",
     image: "/assets/moorcha.png",
     category: ["VFX & Editing", "All"],
-  },{
+  },
+  {
     title: "Pulsar India",
     description: "Multiple IG Reels videos made for Pulsar India",
     link: "https://drive.google.com/drive/folders/1KEhxEhX3yIQihL6ieUS68T9G1rie7r4N?usp=sharing",
     code: "https://drive.google.com/drive/folders/1KEhxEhX3yIQihL6ieUS68T9G1rie7r4N?usp=sharing",
     image: "/assets/pulsar.png",
     category: ["VFX & Editing", "All"],
-  },{
+  },
+  {
     title: "Rewind 2019",
     description: "An RK Musical mashup of all top songs of 2019",
     link: "https://www.youtube.com/watch?v=l53F1xJgoXs",
     code: "https://www.youtube.com/watch?v=l53F1xJgoXs",
     image: "/assets/rewind.png",
     category: ["VFX & Editing", "All"],
-  },{
+  },
+  {
     title: "HTML with GPT-3",
     description: "Let's compare code from GPT-3 and a dumb human",
     link: "https://bladedship.github.io/HTMLwithGPT3/",
@@ -104,13 +111,16 @@ function Projects() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4, delayChildren: 0.5 }}
+          transition={{
+            duration: 0.4,
+            delayChildren: 0.5,
+          }}
           className="work-portfolio"
         >
           {work.map((item, index) => (
             <div className="work-item flex" key={index}>
               <div className="work-img flex">
-              <img src={item.image} alt={item.title} />
+                <img src={item.image} alt={item.title} />
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileHover={{ opacity: 1 }}
@@ -150,12 +160,12 @@ function Projects() {
                 </motion.div>
               </div>
               <div className="work-content flex">
-              <h4 className="bold-text">{item.title}</h4>
-              <p className="p-text p-custom">{item.description}</p>
-              <div className="work-tag flex">
-                    <p className="p-text">{item.category[0]}</p>
+                <h4 className="bold-text">{item.title}</h4>
+                <p className="p-text p-custom">{item.description}</p>
+                <div className="work-tag flex">
+                  <p className="p-text">{item.category[0]}</p>
+                </div>
               </div>
-            </div>
             </div>
           ))}
         </motion.div>

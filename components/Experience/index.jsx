@@ -60,9 +60,9 @@ function Experience() {
                 whileInView={{ opacity: 1, x: 0 }}
                 whileHover={{ scale: 1.05 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.2, ease: "easeInOut" }}
+                transition={{ duration: 0.2, ease: "easeInOut"}}
                 className="work-card"
-                key={exp.role}
+                key={index}
               >
                 <div className="exp-img">
                   <img src={exp.image} />

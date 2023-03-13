@@ -33,6 +33,7 @@ function Hero() {
           }}
           transition={{
             duration: 0.4,
+            type: "spring",
           }}
           viewport={{
             once: true,
