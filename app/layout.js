@@ -14,7 +14,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Adithyan Jayakumar",
-  description: "Portfolio of Adithyan Jayakumar",
+  description: "Making dumb crap just because I can",
 };
 
 export default function RootLayout({ children }) {
