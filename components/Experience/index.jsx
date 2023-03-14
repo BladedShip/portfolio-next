@@ -54,7 +54,7 @@ function Experience() {
         </h2>
         <motion.div className="container">
           {experience.map((exp, index) => (
-            <>
+            <div key={index} className="work-div">
               <motion.div
                 initial={{ opacity: 0, x: 300 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -62,7 +62,6 @@ function Experience() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.2, ease: "easeInOut"}}
                 className="work-card"
-                key={index}
               >
                 <div className="exp-img">
                   <img src={exp.image} />
@@ -94,7 +93,7 @@ function Experience() {
                   </div>
                 </div>
               </motion.div>
-            </>
+            </div>
           ))}
         </motion.div>
       </div>
