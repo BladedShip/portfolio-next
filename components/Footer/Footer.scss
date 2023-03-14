@@ -8,5 +8,13 @@
     a{
         text-decoration: none;
         color: var(--white-color);
+        transition: all 0.3s ease-in-out;
+        border: 1px solid transparent;
+        &:hover{
+            color: var(--secondary-color);
+            border-color: transparent transparent var(--secondary-color) transparent;
+            border-width: 1px 1px 1px 1px;
+            border-style: inset;
+        }
     }
 }
