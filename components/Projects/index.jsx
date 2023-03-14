@@ -80,7 +80,7 @@ const work = [
     link: "https://drive.google.com/drive/folders/1KEhxEhX3yIQihL6ieUS68T9G1rie7r4N?usp=sharing",
     code: "https://drive.google.com/drive/folders/1KEhxEhX3yIQihL6ieUS68T9G1rie7r4N?usp=sharing",
     image: "/assets/pulsar.png",
-    category: ["VFX & Editing", "All"],
+    category: ["VFX", "All"],
   },
   {
     title: "Rewind 2019",
