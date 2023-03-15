@@ -84,7 +84,6 @@ function Experience() {
                           <ArrowRightIcon
                             height={8}
                             width={8}
-                            color="#fcfcfc"
                           />
                           {`  ${desc}`}
                         </li>
