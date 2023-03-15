@@ -38,8 +38,8 @@ function Navbar() {
               />
               <ul>
                 {tabs.map((item) => (
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    <li key={item}>{item}</li>
+                  <a href={`#${item}`} onClick={() => setToggle(false)} key={item}>
+                    <li>{item}</li>
                   </a>
                 ))}
               </ul>
