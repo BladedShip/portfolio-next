@@ -14,13 +14,16 @@
 }
 .social-icon{
     transition: all 0.5s ease-in-out;
-        &:hover{
-            cursor: pointer;
-            transform: scale(1.1);
-            svg{
-                .social-svg-mask{
-                    fill: var(--secondary-color) !important;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        svg{
+            .social-svg-mask{
+                fill: var(--secondary-color) !important;
+                &:active{
+                    fill:var(--white-color) !important;
                 }
             }
         }
+    }
 }
