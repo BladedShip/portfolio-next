@@ -9,6 +9,14 @@ import "./Projects.scss";
 
 const work = [
   {
+    title: "Pinkify",
+    description: "A spotify clone made using NextJS and Spotify API",
+    link: "https://pinkify.adithyan.tech",
+    code: "https://github.com/BladedShip/pinkify",
+    image: "/assets/pinkify.png",
+    category: ["Web App", "All"],
+  },
+  {
     title: "Thoughts Unleashed",
     description: "A blogging website built using NextJS and SanityCMS",
     link: "https://blog.adithyan.tech",
