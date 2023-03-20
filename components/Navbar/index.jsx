@@ -2,15 +2,14 @@
 
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { motion } from "framer-motion";
 
 import "./Navbar.scss";
+import { motion } from "framer-motion";
 
 const tabs = ["home", "about", "experience", "projects", "contact"];
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
-
   return (
     <>
       <nav className="navbar">
@@ -29,13 +28,9 @@ function Navbar() {
           <Bars3Icon className="icon-default" onClick={() => setToggle(true)} />
           {toggle && (
             <motion.div
-              whileInView={{
-                x: [300, 0],
-              }}
-              transition={{
-                duration: 0.4,
-                ease: "easeInOut",
-              }}
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.25 }}
             >
               <XMarkIcon
                 className="icon-default"
@@ -43,11 +38,9 @@ function Navbar() {
               />
               <ul>
                 {tabs.map((item) => (
-                  <li key={item}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}>
-                      {item}
-                    </a>
-                  </li>
+                  <a href={`#${item}`} onClick={() => setToggle(false)} key={item}>
+                    <li>{item}</li>
+                  </a>
                 ))}
               </ul>
             </motion.div>
