@@ -15,6 +15,9 @@ const poppins = Poppins({
 export const metadata = {
   title: "Adithyan Jayakumar",
   description: "Making dumb crap just because I can",
+  icons:{
+    icon:"/icon.png",
+  }
 };
 
 export default function RootLayout({ children }) {
