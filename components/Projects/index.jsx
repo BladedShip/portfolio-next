@@ -9,6 +9,14 @@ import "./Projects.scss";
 
 const work = [
   {
+    title: "Image-Gen",
+    description: "An AI image generator made using NextJS, DALL-E and Microsoft Azure",
+    link: "https://imagen.adithyan.tech",
+    code: "https://github.com/BladedShip/image-gen",
+    image: "/assets/imagen.png",
+    category: ["Web App", "All"],
+  },
+  {
     title: "Pinkify",
     description: "A spotify clone made using NextJS and Spotify API",
     link: "https://pinkify.adithyan.tech",
