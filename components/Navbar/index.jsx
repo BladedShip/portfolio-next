@@ -4,9 +4,8 @@ import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import "./Navbar.scss";
+import { tabs } from "@/lib/constants";
 import { motion } from "framer-motion";
-
-const tabs = ["home", "about", "experience", "projects", "contact"];
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);

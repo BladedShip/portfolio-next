@@ -6,115 +6,7 @@ import { EyeIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 import "./Projects.scss";
-
-const work = [
-  {
-    title: "Image-Gen",
-    description: "An AI image generator made using NextJS, DALL-E and Microsoft Azure",
-    link: "https://imagen.adithyan.tech",
-    code: "https://github.com/BladedShip/image-gen",
-    image: "/assets/imagen.png",
-    category: ["Web App", "All"],
-  },
-  {
-    title: "Pinkify",
-    description: "A spotify clone made using NextJS and Spotify API",
-    link: "https://pinkify.adithyan.tech",
-    code: "https://github.com/BladedShip/pinkify",
-    image: "/assets/pinkify.png",
-    category: ["Web App", "All"],
-  },
-  {
-    title: "Thoughts Unleashed",
-    description: "A blogging website built using NextJS and SanityCMS",
-    link: "https://blog.adithyan.tech",
-    code: "https://github.com/BladedShip/unleashed",
-    image: "/assets/unleashed.png",
-    category: ["Web App", "All"],
-  },
-  {
-    title: "JeePeeTee",
-    description: "A GPT-3 web client made using NextJS, Firebase and GPT-3 API",
-    link: "https://gpt.adithyan.tech",
-    code: "https://github.com/BladedShip/jeepeetee",
-    image: "/assets/gpt.png",
-    category: ["Web App", "All"],
-  },
-  {
-    title: "FaithFood",
-    description:
-      "A food delivery platform focusing on home to home food delivery",
-    link: "https://www.figma.com/file/us3Bc9AX78sL5YwZwOj8zX/Designs?node-id=144%3A712&t=IKUFKQ7nSuP11f3f-1",
-    code: "https://github.com/BladedShip/S8Project",
-    image: "/assets/ff.png",
-    category: ["Mobile App", "All"],
-  },
-  {
-    title: "WhatsDown",
-    description:
-      "It's WhatsApp, but worse. Built with React Native and Amplify",
-    link: "https://github.com/BladedShip/WhatsDown",
-    code: "https://github.com/BladedShip/WhatsDown",
-    image: "https://images.pexels.com/photos/6044820/pexels-photo-6044820.jpeg",
-    category: ["Mobile App", "All"],
-  },
-  {
-    title: "Thoroute",
-    description: "Supposed to be a web app with a bus router, but it's not",
-    link: "https://bladedship.github.io/thoroute/",
-    code: "https://github.com/BladedShip/thoroute",
-    image: "/assets/thoroute.png",
-    category: ["Website", "All"],
-  },
-  {
-    title: "RK Musical",
-    description: "A website made for RK Musical using Mobirise",
-    link: "https://rkmusical.com/",
-    code: "https://github.com/itsmeRK/itsmerk.github.io",
-    image: "/assets/rkmusical.png",
-    category: ["Website", "All"],
-  },
-  {
-    title: "Adventure of a Lifetime",
-    description: "A game I made in under 12 hours using Unity and C#",
-    link: "https://drive.google.com/file/d/1YDuqnbva6sTOo5W4p_4CUGSMpRB251g8/view?usp=sharing",
-    code: "https://github.com/BladedShip/The-Adventure-of-a-Lifetime",
-    image: "/assets/lifetime.png",
-    category: ["Game", "All"],
-  },
-  {
-    title: "Moorcha",
-    description: "A short film dreamt up by me and my friends",
-    link: "https://www.youtube.com/watch?v=01vQ105e1xI",
-    code: "https://www.youtube.com/watch?v=01vQ105e1xI",
-    image: "/assets/moorcha.png",
-    category: ["VFX & Editing", "All"],
-  },
-  {
-    title: "Pulsar India",
-    description: "Multiple IG Reels videos made for Pulsar India",
-    link: "https://drive.google.com/drive/folders/1KEhxEhX3yIQihL6ieUS68T9G1rie7r4N?usp=sharing",
-    code: "https://drive.google.com/drive/folders/1KEhxEhX3yIQihL6ieUS68T9G1rie7r4N?usp=sharing",
-    image: "/assets/pulsar.png",
-    category: ["VFX", "All"],
-  },
-  {
-    title: "Rewind 2019",
-    description: "An RK Musical mashup of all top songs of 2019",
-    link: "https://www.youtube.com/watch?v=l53F1xJgoXs",
-    code: "https://www.youtube.com/watch?v=l53F1xJgoXs",
-    image: "/assets/rewind.png",
-    category: ["VFX & Editing", "All"],
-  },
-  {
-    title: "HTML with GPT-3",
-    description: "Let's compare code from GPT-3 and a dumb human",
-    link: "https://bladedship.github.io/HTMLwithGPT3/",
-    code: "https://github.com/BladedShip/HTMLwithGPT3",
-    image: "/assets/htmlgpt.png",
-    category: ["Website", "All"],
-  },
-];
+import { work } from "@/lib/constants";
 
 function Projects() {
   return (
@@ -131,7 +23,7 @@ function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{
-                duration: 0.4,
+                duration: 0.4+index*0.1,
                 delayChildren: 0.5,
               }}
             >

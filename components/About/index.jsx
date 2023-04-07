@@ -4,33 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import "./About.scss";
-
-const cards = [
-  {
-    title: "Web Developer",
-    description:
-      "Building top tier apps with Next.js and React with a dash of SvelteKit mixed in.",
-    image: "/assets/web-min.jpg",
-  },
-  {
-    title: "UI Designer",
-    description:
-      "Using Figma to bring all that I could imagine to life. Sometimes I wing it with the Adobe Suite.",
-    image: "/assets/ui-min.jpg",
-  },
-  {
-    title: "Content Writer",
-    description:
-      "A storyteller at heart, I love to write about the things I love and the things I learn.",
-    image: "/assets/writer-min.jpg",
-  },
-  {
-    title: "VFX Artist",
-    description:
-      "Sometimes the best way to tell stories is through Visual Effects. I love to create worlds and bring them to life.",
-    image: "/assets/vfx-min.png",
-  },
-];
+import { cards } from "@/lib/constants";
 
 function About() {
   return (
@@ -56,7 +30,7 @@ function About() {
                 scale: 1.1,
               }}
               transition={{
-                duration: 0.4,
+                duration: 0.4 + index * 0.1,
               }}
               viewport={{
                 once: true,
