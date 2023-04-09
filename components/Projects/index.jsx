@@ -15,7 +15,7 @@ function Projects() {
         <h2 className="head-text">
           Building <span>Random </span> Crap
         </h2>
-        <div className="work-portfolio">
+        <motion.div className="work-portfolio">
           {work.map((item, index) => (
             <motion.div
               key={index}
@@ -23,8 +23,8 @@ function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{
-                duration: 0.4+index*0.1,
-                delayChildren: 0.5,
+                duration: 0.4,
+                delay: index*0.04,
               }}
             >
               <div className="work-item flex">
@@ -78,7 +78,7 @@ function Projects() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );
