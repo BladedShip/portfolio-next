@@ -24,7 +24,7 @@ function Projects() {
               viewport={{ once: true }}
               transition={{
                 duration: 0.4,
-                delay: index*0.04,
+                delay: index * 0.04,
               }}
             >
               <div className="work-item flex">
@@ -40,32 +40,36 @@ function Projects() {
                     }}
                     className="work-hover flex"
                   >
-                    <Link href={item.link} target="_blank" rel="noreferrer">
-                      <motion.div
-                        initial={{ scale: 1 }}
-                        whileHover={{ scale: 0.9 }}
-                        whileInView={{ scale: 1 }}
-                        transition={{
-                          duration: 0.25,
-                        }}
-                        className="flex"
-                      >
-                        <EyeIcon className="icon" />
-                      </motion.div>
-                    </Link>
-                    <Link href={item.code} target="_blank" rel="noreferrer">
-                      <motion.div
-                        initial={{ scale: 1 }}
-                        whileHover={{ scale: 0.9 }}
-                        whileInView={{ scale: 1 }}
-                        transition={{
-                          duration: 0.25,
-                        }}
-                        className="flex"
-                      >
-                        <CodeBracketIcon className="icon" />
-                      </motion.div>
-                    </Link>
+                    {item.link != item.code && (
+                      <Link href={item.link} target="_blank" rel="noreferrer">
+                        <motion.div
+                          initial={{ scale: 1 }}
+                          whileHover={{ scale: 0.9 }}
+                          whileInView={{ scale: 1 }}
+                          transition={{
+                            duration: 0.25,
+                          }}
+                          className="flex"
+                        >
+                          <EyeIcon className="icon" />
+                        </motion.div>
+                      </Link>
+                    )}
+                    {item.code != "none" && (
+                      <Link href={item.code} target="_blank" rel="noreferrer">
+                        <motion.div
+                          initial={{ scale: 1 }}
+                          whileHover={{ scale: 0.9 }}
+                          whileInView={{ scale: 1 }}
+                          transition={{
+                            duration: 0.25,
+                          }}
+                          className="flex"
+                        >
+                          <CodeBracketIcon className="icon" />
+                        </motion.div>
+                      </Link>
+                    )}
                   </motion.div>
                 </div>
                 <div className="work-content flex">
