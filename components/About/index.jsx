@@ -30,7 +30,8 @@ function About() {
                 scale: 1.1,
               }}
               transition={{
-                duration: 0.4 + index * 0.1,
+                delay: index * 0.06,
+                duration: 0.4,
               }}
               viewport={{
                 once: true,

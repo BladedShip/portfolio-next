@@ -22,7 +22,11 @@ function Experience() {
                 whileInView={{ opacity: 1, x: 0 }}
                 whileHover={{ scale: 1.05 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.2+index*0.1, ease: "easeInOut"}}
+                transition={{
+                  duration: 0.2,
+                  delay: index * 0.1,
+                  ease: "easeInOut",
+                }}
                 className="work-card"
               >
                 <div className="exp-img">
@@ -43,10 +47,7 @@ function Experience() {
                     <ul className="skills-list">
                       {exp.description.map((desc, index) => (
                         <li className="p-text skill" key={index}>
-                          <ArrowRightIcon
-                            height={8}
-                            width={8}
-                          />
+                          <ArrowRightIcon height={8} width={8} />
                           {`  ${desc}`}
                         </li>
                       ))}

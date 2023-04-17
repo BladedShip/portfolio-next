@@ -15,7 +15,7 @@ function Projects() {
         <h2 className="head-text">
           Building <span>Random </span> Crap
         </h2>
-        <div className="work-portfolio">
+        <motion.div className="work-portfolio">
           {work.map((item, index) => (
             <motion.div
               key={index}
@@ -23,8 +23,8 @@ function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{
-                duration: 0.4+index*0.1,
-                delayChildren: 0.5,
+                duration: 0.4,
+                delay: index * 0.04,
               }}
             >
               <div className="work-item flex">
@@ -40,32 +40,36 @@ function Projects() {
                     }}
                     className="work-hover flex"
                   >
-                    <Link href={item.link} target="_blank" rel="noreferrer">
-                      <motion.div
-                        initial={{ scale: 1 }}
-                        whileHover={{ scale: 0.9 }}
-                        whileInView={{ scale: 1 }}
-                        transition={{
-                          duration: 0.25,
-                        }}
-                        className="flex"
-                      >
-                        <EyeIcon className="icon" />
-                      </motion.div>
-                    </Link>
-                    <Link href={item.code} target="_blank" rel="noreferrer">
-                      <motion.div
-                        initial={{ scale: 1 }}
-                        whileHover={{ scale: 0.9 }}
-                        whileInView={{ scale: 1 }}
-                        transition={{
-                          duration: 0.25,
-                        }}
-                        className="flex"
-                      >
-                        <CodeBracketIcon className="icon" />
-                      </motion.div>
-                    </Link>
+                    {item.link != item.code && (
+                      <Link href={item.link} target="_blank" rel="noreferrer">
+                        <motion.div
+                          initial={{ scale: 1 }}
+                          whileHover={{ scale: 0.9 }}
+                          whileInView={{ scale: 1 }}
+                          transition={{
+                            duration: 0.25,
+                          }}
+                          className="flex"
+                        >
+                          <EyeIcon className="icon" />
+                        </motion.div>
+                      </Link>
+                    )}
+                    {item.code != "none" && (
+                      <Link href={item.code} target="_blank" rel="noreferrer">
+                        <motion.div
+                          initial={{ scale: 1 }}
+                          whileHover={{ scale: 0.9 }}
+                          whileInView={{ scale: 1 }}
+                          transition={{
+                            duration: 0.25,
+                          }}
+                          className="flex"
+                        >
+                          <CodeBracketIcon className="icon" />
+                        </motion.div>
+                      </Link>
+                    )}
                   </motion.div>
                 </div>
                 <div className="work-content flex">
@@ -78,7 +82,7 @@ function Projects() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );
