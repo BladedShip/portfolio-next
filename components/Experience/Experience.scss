@@ -1,34 +1,36 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .work-card{
+    .work-card {
         user-select: none;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        border:1px solid transparent;
+        border: 1px solid transparent;
+        text-decoration: none;
+
         border-radius: 0.5rem;
-        margin:1rem;
+        margin: 1rem;
         padding-right: 2rem;
-        transition:all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         width: 100%;
-        .header-work{
-            display:flex;
+        .header-work {
+            display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
             padding: 1rem;
-            @media screen and (max-width:900px){
+            @media screen and (max-width: 900px) {
                 flex-direction: column;
                 align-items: flex-start;
             }
         }
-        ul{
-            padding:0 1rem;
-            li{
+        ul {
+            padding: 0 1rem;
+            li {
                 margin-bottom: 0.2rem;
                 display: -webkit-box;
                 -webkit-line-clamp: 1;
@@ -36,42 +38,42 @@
                 overflow: hidden;
             }
         }
-        .exp-img{
+        .exp-img {
             margin: 3rem;
             display: flex;
-            @media screen and (max-width:900px){
+            @media screen and (max-width: 900px) {
                 width: 80%;
                 margin: 2rem;
                 align-items: center;
                 justify-content: center;
             }
-            img{
+            img {
                 width: 120px;
                 height: 120px;
                 object-fit: cover;
                 border-radius: 50%;
 
-                @media screen and (max-width:900px){
+                @media screen and (max-width: 900px) {
                     width: 80%;
                     border-radius: 0.5rem;
                 }
             }
         }
-        .content{
+        .content {
             width: 100%;
         }
-        @media screen and (max-width:900px){
+        @media screen and (max-width: 900px) {
             flex-direction: column;
             padding: 1rem;
             width: 96%;
-            margin:0.5rem;
+            margin: 0.5rem;
         }
-        &:hover{
-            border:1px solid var(--secondary-color);
+        &:hover {
+            border: 1px solid var(--secondary-color);
         }
     }
 }
 
-.work-div{
+.work-div {
     width: 100%;
 }
