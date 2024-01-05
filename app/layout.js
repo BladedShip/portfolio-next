@@ -14,7 +14,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Adithyan Jayakumar",
-  description: "Making dumb crap just because I can",
+  description: "Building experiences, one line of code at a time",
   icons:{
     icon:"/icon.png",
   },
